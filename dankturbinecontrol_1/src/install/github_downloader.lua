@@ -122,7 +122,7 @@ function getFiles()
 	--Startup
 	print("Startup file...")
 	local file = fs.open("startup","w")
-  	file.writeLine("shell.run(\"/Dank-Extream-Reactor-2-Turbine-Program/start/start.lua\")")
+  	file.writeLine("shell.run(\"/dankturbinecontrol_1/start/start.lua\")")
 	file.close()
 end
 
