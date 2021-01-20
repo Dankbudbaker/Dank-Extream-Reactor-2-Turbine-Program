@@ -140,7 +140,7 @@ function releaseVersion()
 	elseif installLang == "en" then
 		writeFile(getURL("install/installerEn.lua"),"install/installer.lua")
 	end
-	shell.run("/Dank-Extream-Reactor-2-Turbine-Program/install/installer.lua")
+	shell.run("/dankturbinecontrol_1/install/installer.lua")
 end
 
 function betaVersion()
