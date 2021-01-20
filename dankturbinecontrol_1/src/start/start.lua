@@ -108,7 +108,7 @@ function _G.checkUpdates()
 	end
 
 	--Get Remote version file
-	downloadFile("https://raw.githubusercontent.com/IllgiLP/Reactor-and-Turbine-control-program/"..currBranch.."/turbineControl_v2/src/",currBranch..".ver")
+	downloadFile("https://raw.githubusercontent.com/Dankbudbaker/Dank-Extream-Reactor-2-Turbine-Program/"..currBranch.."/dankturbinecontrol_1/src/",currBranch..".ver")
 
 	--Compare local and remote version
 	local file = fs.open(currBranch..".ver","r")
