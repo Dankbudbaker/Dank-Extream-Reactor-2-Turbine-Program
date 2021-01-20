@@ -170,7 +170,7 @@ function backToMainMenu()
   currPage=touch1
   currPage:draw()
   mon.setCursorPos(2,2)
-  mon.setTextColor(tonumber(optionList["textColor"]))
+  mon.setTextColor(tonumber(optionList["TextColor"]))
   mon.setBackgroundColor(tonumber(optionList["backgroundColor"]))
   mon.setCursorPos(4,2)
 

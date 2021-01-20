@@ -9,7 +9,7 @@
   targetSteam = 2000,
   turbineTargetSpeed = 1820,
   version = "2.6-release",
-  textColor = 1,
+  TextColor = 1,
   program = "turbine",
   turbineOnOff = "off",
   lang = "en",
