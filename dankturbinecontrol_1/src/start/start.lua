@@ -22,7 +22,7 @@ _G.turbineOnOff = ""
 --Peripherals
 _G.mon = "" --Monitor
 _G.r = "" --Reactor
-_G.v = "" --Energy Storage
+_G.v = peripheral.wrap("powah:energy_cell_0") --powah Energy Storage
 _G.t = {} --Turbines
 --Total count of all turbines
 _G.amountTurbines = 0
