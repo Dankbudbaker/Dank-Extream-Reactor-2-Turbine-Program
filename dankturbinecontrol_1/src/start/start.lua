@@ -38,7 +38,7 @@ _G.touchpointLocation = {}
 --Loads the options.txt file and adds values to the global variables
 function _G.loadOptionFile()
 	--Loads the file
-	local file = fs.open("/Dank-Extream-Reactor-2-Turbine-Program/config/options.txt","r")
+	local file = fs.open("/dankturbinecontrol_1/config/options.txt","r")
 	local list = file.readAll()
 	file.close()
 
