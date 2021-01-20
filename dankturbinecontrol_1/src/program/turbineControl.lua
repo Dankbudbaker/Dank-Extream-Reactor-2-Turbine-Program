@@ -207,11 +207,11 @@ function checkPeripherals()
 end
 
 function getEnergy()
-    return v.getEnergy()
+    return v.getEnergy("unknown")
 end
 
 function getEnergyMax()
-    return v.getEnergyCapacity()
+    return v.getEnergyCapacity("unknown")
 end
 
 function getEnergyPer()
@@ -487,7 +487,8 @@ function getTo99c()
     mon.setTextColor(textColor)
     mon.clear()
     mon.setCursorPos(1, 1)
-
+    local fTemp = r.getFuelTemperature()
+    local cTemp = r.getCasingTemperature()
     if lang == "de" then
         mon.write("Bringe Reaktor unter 99 Grad...")
     elseif lang == "en" then
@@ -503,8 +504,7 @@ function getTo99c()
     allTurbinesOn()
 
     --Temperature variables
-    local fTemp = r.getFuelTemperature()
-    local cTemp = r.getCasingTemperature()
+
     local isNotBelow = true
 
     --Wait until both values are below 99
