@@ -44,7 +44,7 @@ function selectBranch()
 	elseif installLang == "en" then
 		print("Which version should be downloaded?")
 		print("Available:")
-		print("1) master (Realeases)")
+		print("1) master (Releases)")
 		print("2) beta (Betaversions)")
 		term.write("Input (1-2): ")
 	end
