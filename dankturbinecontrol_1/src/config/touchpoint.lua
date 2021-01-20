@@ -1,5 +1,5 @@
--- Reaktor- and Turbinen control by Thor_s_Crafter --
--- Version 2.6 --
+--   Dank Extream Reactor 2 Turbine Program by Dankbudbaker --
+--  Version 1.0 --
 -- Touchpoint API by Lyqyd - Slightly changed --
 
 local file = fs.open("/Dank-Extream-Reactor-2-Turbine-Program/config/options.txt","r")

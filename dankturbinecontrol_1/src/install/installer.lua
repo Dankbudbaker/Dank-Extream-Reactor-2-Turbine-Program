@@ -1,5 +1,5 @@
--- Reactor- und Turbine control by Thor_s_Crafter --
--- Version 2.6 --
+--   Dank Extream Reactor 2 Turbine Program by Dankbudbaker--
+--  Version 1.0 --
 -- Installer (Deutsch) --
 
 
@@ -72,7 +72,7 @@ if not update then
   term.clear()
   term.setCursorPos(1,1)
   print("Reaktor- und Turbinenprogramm von Thor_s_Crafter")
-  print("Version 2.6")
+  print(" Version 1.0")
   print()
   print("Ueber das Programm:")
   print("Das Programm kontrolliert einen BigReactors-Reaktor.")
@@ -214,8 +214,8 @@ if not update then
   print("Danke, dass du mein Programm benutzt! ;)")
   print("Viel Spass damit!")
   print()
-  print("Thor_s_Crafter")
-  print("(c) 2016")
+  print("Dankbudbaker")
+  print("(c) 2020")
 
   local x,y = term.getSize()
   term.setTextColor(colors.yellow)

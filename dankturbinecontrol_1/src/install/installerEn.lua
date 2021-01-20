@@ -1,5 +1,5 @@
--- Reactor- und Turbine control by Thor_s_Crafter --
--- Version 2.6 --
+--   Dank Extream Reactor 2 Turbine Program by Dankbudbaker--
+--  Version 1.0 --
 -- Installer (English) --
 
 
@@ -39,7 +39,7 @@ else
 end
 
 --Url for file downloads
-local relUrl = https://raw.githubusercontent.com/Dankbudbaker/Dank-Extream-Reactor-2-Turbine-Program/"..branch.."/dankturbinecontrol_1/src/"
+local relUrl = "https://raw.githubusercontent.com/Dankbudbaker/Dank-Extream-Reactor-2-Turbine-Program/"..branch.."/dankturbinecontrol_1/src/"
 
 
 --===== Functions =====
@@ -71,8 +71,8 @@ if not update then
   --Description
   term.clear()
   term.setCursorPos(1,1)
-  print("Reactor- and Turbine control by Thor_s_Crafter")
-  print("Version 2.6")
+  print("Dank Extream Reactor 2 Turbine Program By Dankbudbaker")
+  print("Version 1.0")
   print()
   print("About this program:")
   print("The program controls one BigReactors reactor.")
@@ -206,8 +206,8 @@ if not update then
   print("Thanks for using my program! ;)")
   print("I hope you like it.")
   print()
-  print("Thor_s_Crafter")
-  print("(c) 2016")
+  print("Dankbudbaker")
+  print("(c) 2020")
 
   local x,y = term.getSize()
   term.setTextColor(colors.yellow)

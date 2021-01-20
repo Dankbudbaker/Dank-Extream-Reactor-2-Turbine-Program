@@ -1,5 +1,5 @@
--- Reactor- and Turbine control by Thor_s_Crafter --
--- Version 2.6 --
+--   Dank Extream Reactor 2 Turbine Program by Dankbudbaker --
+--  Version 1.0 --
 -- Start program --
 
 --========== Global variables for all program parts ==========

@@ -1,5 +1,5 @@
--- Reaktor- und Turbinenprogramm von Thor_s_Crafter --
--- Version 2.6 --
+--   Dank Extream Reactor 2 Turbine Program by Dankbudbaker --
+--  Version 1.0 --
 -- Hauptmenue --
 
 --Loads the Touchpoint API (by Lyqyd)

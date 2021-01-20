@@ -1,5 +1,5 @@
--- Reactor- und Turbine control by Thor_s_Crafter --
--- Version 2.6 --
+--   Dank Extream Reactor 2 Turbine Program by Dankbudbaker--
+--  Version 1.0 --
 -- Turbine control --
 
 --Loads the touchpoint API

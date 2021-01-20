@@ -1,4 +1,4 @@
--- Reactor- und Turbine control by Thor_s_Crafter --
+--   Dank Extream Reactor 2 Turbine Program by Dankbudbaker--
 -- Init Program Downloader (GitHub) --
 
 
