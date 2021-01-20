@@ -22,13 +22,13 @@ _G.turbineOnOff = ""
 --Peripherals
 _G.mon = "" --Monitor
 _G.r = "" --Reactor
-_G.v = cell --powah Energy Storage
+_G.v = peripheral.wrap("top") --powah Energy Storage
 _G.t = {} --Turbines
 --Total count of all turbines
 _G.amountTurbines = 0
 --TouchpointLocation (same as the monitor)
 _G.touchpointLocation = {}
-cell = peripheral.wrap("powah:energy_cell_0")
+
 
 --========== Global functions for all program parts ==========
 
