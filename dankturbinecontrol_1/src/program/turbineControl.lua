@@ -492,6 +492,10 @@ function getTo99c()
         mon.write("Bringe Reaktor unter 99 Grad...")
     elseif lang == "en" then
         mon.write("Getting Reactor below 99c ...")
+        mon.setCursorPos(1, 3)
+        mon.write("CoreTemp: " .. fTemp .. "      ")
+        mon.setCursorPos(1, 5)
+        mon.write("CasingTemp: " .. cTemp .. "      ")
     end
 
     --Disables reactor and turbines
