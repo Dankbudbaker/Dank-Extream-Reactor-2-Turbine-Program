@@ -33,7 +33,7 @@ _G.touchpointLocation = {}
 --========== Global functions for all program parts ==========
 
 
---===== Functions for loading and saving the options =====
+--=====  Functions for loading and saving the options =====
 
 --Loads the options.txt file and adds values to the global variables
 function _G.loadOptionFile()
