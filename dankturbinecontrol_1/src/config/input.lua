@@ -1,5 +1,5 @@
 -- Input API --
--- von Thor_s_Crafter --
+-- von Dankbudbaker --
 -- Version 1.0 --
 
 --Formatiert grosse Zahlenwerte in String (z.B. 1.000)

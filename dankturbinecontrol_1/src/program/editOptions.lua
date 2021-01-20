@@ -3,11 +3,11 @@
 -- Options menu --
 
 --Loads the touchpoint and input APIs
-shell.run("cp /dankturbinecontrol_1/src/config/touchpoint.lua /touchpoint")
+shell.run("cp /dankturbinecontrol_1/config/touchpoint.lua /touchpoint")
 os.loadAPI("touchpoint")
 shell.run("rm touchpoint")
 
-shell.run("cp /dankturbinecontrol_1/src/config/input.lua /input")
+shell.run("cp /dankturbinecontrol_1/config/input.lua /input")
 os.loadAPI("input")
 shell.run("rm input")
 
@@ -27,8 +27,8 @@ local currFunct = backToMainMenu
 --Save the changes and reopen the options menu
 function saveConfigFile()
   saveOptionFile()
-  shell.run("/dankturbinecontrol_1/src/program/editOptions.lua")
-  shell.completeProgram("/dankturbinecontrol_1/src/program/editOptions.lua")
+  shell.run("/dankturbinecontrol_1/program/editOptions.lua")
+  shell.completeProgram("/dankturbinecontrol_1/program/editOptions.lua")
 end
 
 --Go back to the program -- deprecated
@@ -36,19 +36,19 @@ function exit()
   mon.clear()
   continue = false
   if program == "turbine" then
-    shell.run("/dankturbinecontrol_1/src/program/turbineControl.lua")
+    shell.run("/dankturbinecontrol_1/program/turbineControl.lua")
   elseif program == "reactor" then
-    shell.run("/dankturbinecontrol_1/src/program/reactorControl.lua")
+    shell.run("/dankturbinecontrol_1/program/reactorControl.lua")
   end
-  shell.completeProgram("/dankturbinecontrol_1/src/program/editOptions.lua")
+  shell.completeProgram("/dankturbinecontrol_1/program/editOptions.lua")
 end
 
 --Go back to the main menu
 function displayMenu()
   loadOptionFile()
   mon.clear()
-  shell.run("/dankturbinecontrol_1/src/start/menu.lua")
-  shell.completeProgram("/dankturbinecontrol_1/src/program/editOptions.lua")
+  shell.run("/dankturbinecontrol_1/start/menu.lua")
+  shell.completeProgram("/dankturbinecontrol_1/program/editOptions.lua")
 end
 
 --Creates all buttons

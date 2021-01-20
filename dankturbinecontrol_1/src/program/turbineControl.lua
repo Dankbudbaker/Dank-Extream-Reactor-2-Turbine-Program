@@ -3,12 +3,12 @@
 -- Turbine control --
 
 --Loads the touchpoint API
-shell.run("cp /dankturbinecontrol_1/src/config/touchpoint.lua /touchpoint")
+shell.run("cp /dankturbinecontrol_1/config/touchpoint.lua /touchpoint")
 os.loadAPI("touchpoint")
 shell.run("rm touchpoint")
 
 --Loads the input API
-shell.run("cp /dankturbinecontrol_1/src/config/input.lua /input")
+shell.run("cp /dankturbinecontrol_1/config/input.lua /input")
 os.loadAPI("input")
 shell.run("rm input")
 
@@ -643,7 +643,7 @@ end
 --Runs another program
 function run(program)
     shell.run(program)
-    shell.completeProgram("/dankturbinecontrol_1/src/program/turbineControl.lua")
+    shell.completeProgram("/dankturbinecontrol_1/program/turbineControl.lua")
     error("terminated.")
 end
 
@@ -689,10 +689,10 @@ function createAllButtons()
 
     --Other buttons
     if lang == "de" then
-        page:add("Hauptmenue", function() run("/dankturbinecontrol_1/src/start/menu.lua") end, 2, 23, 17, 23)
+        page:add("Hauptmenue", function() run("/dankturbinecontrol_1/start/menu.lua") end, 2, 23, 17, 23)
         --In Englisch
     elseif lang == "en" then
-        page:add("Main Menu", function() run("/dankturbinecontrol_1/src/start/menu.lua") end, 2, 23, 17, 23)
+        page:add("Main Menu", function() run("/dankturbinecontrol_1/start/menu.lua") end, 2, 23, 17, 23)
     end
     page:draw()
 end

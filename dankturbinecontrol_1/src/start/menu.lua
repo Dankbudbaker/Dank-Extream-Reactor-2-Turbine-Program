@@ -3,7 +3,7 @@
 -- Hauptmenue --
 
 --Loads the Touchpoint API (by Lyqyd)
-shell.run("cp /dankturbinecontrol_1/src/config/touchpoint.lua /touchpoint")
+shell.run("cp /dankturbinecontrol_1/config/touchpoint.lua /touchpoint")
 os.loadAPI("touchpoint")
 shell.run("rm touchpoint")
 
@@ -94,7 +94,7 @@ function _G.exit()
   end
   term.clear()
   term.setCursorPos(1,1)
-  shell.completeProgram("/dankturbinecontrol_1/src/start/menu.lua")
+  shell.completeProgram("/dankturbinecontrol_1/start/menu.lua")
 end
 
 function _G.switchProgram(currBut)
@@ -140,13 +140,13 @@ end
 
 function _G.startTC()
   if program == "turbine" then
-    shell.run("/dankturbinecontrol_1/src/program/turbineControl.lua")
+    shell.run("/dankturbinecontrol_1/program/turbineControl.lua")
   elseif program == "reactor" then
-    shell.run("/dankturbinecontrol_1/src/program/reactorControl.lua")
+    shell.run("/dankturbinecontrol_1/program/reactorControl.lua")
   end
 end
 function displayOptions()
-  shell.run("/dankturbinecontrol_1/src/program/editOptions.lua")
+  shell.run("/dankturbinecontrol_1/program/editOptions.lua")
 end
 function reboot()
   restart()

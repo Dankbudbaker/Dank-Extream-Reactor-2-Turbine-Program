@@ -2,7 +2,7 @@
 --  Version 1.0 --
 -- Touchpoint API by Lyqyd - Slightly changed --
 
-local file = fs.open("/dankturbinecontrol_1/src/config/options.txt","r")
+local file = fs.open("/dankturbinecontrol_1/config/options.txt","r")
 local list = file.readAll()
 file.close()
 
