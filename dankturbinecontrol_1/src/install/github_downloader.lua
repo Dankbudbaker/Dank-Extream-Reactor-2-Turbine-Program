@@ -78,7 +78,7 @@ end
 
 --Writes the files to the computer
 function writeFile(url,path)
-	local file = fs.open("/Dank-Extream-Reactor-2-Turbine-Program/"..path,"w")
+	local file = fs.open("/dankturbinecontrol_1/"..path,"w")
 	file.write(url)
 	file.close()
 end
