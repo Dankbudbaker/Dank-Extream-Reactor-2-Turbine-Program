@@ -46,7 +46,7 @@ local relUrl = "https://raw.githubusercontent.com/Dankbudbaker/Dank-Extream-Reac
 
 --Writes the files to the computer
 function writeFile(url,path)
-  local file = fs.open("/dankturbinecontrol_1/src/"..path,"w")
+  local file = fs.open("/dankturbinecontrol_1/"..path,"w")
   file.write(url)
   file.close()
 end
@@ -71,7 +71,7 @@ if not update then
   --Description
   term.clear()
   term.setCursorPos(1,1)
-  print("Reaktor- und Turbinenprogramm von Thor_s_Crafter")
+  print("ReaktDank Extream Reactor 2 Turbine Program By Dankbudbaker")
   print(" Version 1.0")
   print()
   print("Ueber das Programm:")
@@ -123,7 +123,7 @@ if not update then
     local input = read()
     if input == "j" then
       local file = fs.open("startup","w")
-      file.writeLine("shell.run(\"/dankturbinecontrol_1/src/start/start.lua\")")
+      file.writeLine("shell.run(\"/dankturbinecontrol_1/start/start.lua\")")
       file.close()
       print()
       print("Startup wurde installiert.")
@@ -149,8 +149,8 @@ term.setCursorPos(1,1)
 print("Checke und loesche vorhandene Programme...")
 
 --Removes old files
-if fs.exists("/dankturbinecontrol_1/src/program/") then
-    shell.run("rm /dankturbinecontrol_1/src/")
+if fs.exists("/dankturbinecontrol_1/program/") then
+    shell.run("rm /dankturbinecontrol_1/")
 end
 
 --Download all program parts
@@ -197,7 +197,7 @@ term.setCursorPos(1,1)
 if fs.exists("startup") then
   shell.run("rm startup")
   local file = fs.open("startup","w")
-  file.writeLine("shell.run(\"/dankturbinecontrol_1/src/start/start.lua\")")
+  file.writeLine("shell.run(\"/dankturbinecontrol_1/start/start.lua\")")
   file.close()
 end
 
@@ -228,4 +228,4 @@ if not update then
   end
 end
 
-shell.completeProgram("/dankturbinecontrol_1/src/install/installer.lua")
+shell.completeProgram("/dankturbinecontrol_1/install/installer.lua")
