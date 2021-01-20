@@ -38,7 +38,7 @@ _G.touchpointLocation = {}
 --Loads the options.txt file and adds values to the global variables
 function _G.loadOptionFile()
 	--Loads the file
-	local file = fs.open("/Dank-Extream-Reactor-2-Turbine-Program/config/options.txt","r")
+	local file = fs.open("/dankturbinecontrol_1/src/config/options.txt","r")
 	local list = file.readAll()
 	file.close()
 
@@ -86,7 +86,7 @@ function _G.saveOptionFile()
     --Serialise the table
     local list = textutils.serialise(optionList)
 	--Save optionList to the config file
-	local file = fs.open("/Dank-Extream-Reactor-2-Turbine-Program/config/options.txt","w")
+	local file = fs.open("/dankturbinecontrol_1/src/config/options.txt","w")
     file.writeLine(list)
 	file.close()
 	print("Saved.")
@@ -215,7 +215,7 @@ function _G.doUpdate(toVer,branch)
 			if event == "key" then
 
 				if p1 == 36 or p1 == 21 then
-					shell.run("/Dank-Extream-Reactor-2-Turbine-Program/install/installer.lua update "..branch)
+					shell.run("/dankturbinecontrol_1/src/install/installer.lua update "..branch)
 					out = true
 					break
 				end
@@ -334,15 +334,15 @@ checkUpdates()
 
 --Run program or main menu, based on the settings
 if mainMenu then
-	shell.run("/Dank-Extream-Reactor-2-Turbine-Program/start/menu.lua")
-	shell.completeProgram("/Dank-Extream-Reactor-2-Turbine-Program/start/start.lua")
+	shell.run("/dankturbinecontrol_1/src/start/menu.lua")
+	shell.completeProgram("/dankturbinecontrol_1/src/start/start.lua")
 else
 	if program == "turbine" then
-		shell.run("/Dank-Extream-Reactor-2-Turbine-Program/program/turbineControl.lua")
+		shell.run("/dankturbinecontrol_1/src/program/turbineControl.lua")
 	elseif program == "reactor" then
-		shell.run("/Dank-Extream-Reactor-2-Turbine-Program/program/reactorControl.lua")
+		shell.run("/dankturbinecontrol_1/src/program/reactorControl.lua")
 	end
-	shell.completeProgram("/Dank-Extream-Reactor-2-Turbine-Program/start/start.lua")
+	shell.completeProgram("/dankturbinecontrol_1/src/start/start.lua")
 end
 
 
