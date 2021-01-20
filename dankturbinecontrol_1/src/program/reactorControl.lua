@@ -3,11 +3,11 @@
 -- Reactor control --
 
 --Loads the touchpoint and input APIs
-shell.run("cp /reactor-turbine-program/config/touchpoint.lua /touchpoint")
+shell.run("cp /Dank-Extream-Reactor-2-Turbine-Program/config/touchpoint.lua /touchpoint")
 os.loadAPI("touchpoint")
 shell.run("rm touchpoint")
 
-shell.run("cp /reactor-turbine-program/config/input.lua /input")
+shell.run("cp /Dank-Extream-Reactor-2-Turbine-Program/config/input.lua /input")
 os.loadAPI("input")
 shell.run("rm input")
 
@@ -29,10 +29,10 @@ local internalBuffer
 function createButtons()
     --In Deutsch
     if lang == "de" then
-        page:add("Hauptmenue", function() run("/reactor-turbine-program/start/menu.lua") end, 2, 22, 17, 22)
+        page:add("Hauptmenue", function() run("/Dank-Extream-Reactor-2-Turbine-Program/start/menu.lua") end, 2, 22, 17, 22)
         --In Englisch
     elseif lang == "en" then
-        page:add("Main Menu", function() run("/reactor-turbine-program/start/menu.lua") end, 2, 22, 17, 22)
+        page:add("Main Menu", function() run("/Dank-Extream-Reactor-2-Turbine-Program/start/menu.lua") end, 2, 22, 17, 22)
     end
 
     --Control Rods Buttons

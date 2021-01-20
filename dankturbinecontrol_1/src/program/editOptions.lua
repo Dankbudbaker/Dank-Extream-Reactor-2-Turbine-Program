@@ -3,11 +3,11 @@
 -- Options menu --
 
 --Loads the touchpoint and input APIs
-shell.run("cp /reactor-turbine-program/config/touchpoint.lua /touchpoint")
+shell.run("cp /Dank-Extream-Reactor-2-Turbine-Program/config/touchpoint.lua /touchpoint")
 os.loadAPI("touchpoint")
 shell.run("rm touchpoint")
 
-shell.run("cp /reactor-turbine-program/config/input.lua /input")
+shell.run("cp /Dank-Extream-Reactor-2-Turbine-Program/config/input.lua /input")
 os.loadAPI("input")
 shell.run("rm input")
 
@@ -27,8 +27,8 @@ local currFunct = backToMainMenu
 --Save the changes and reopen the options menu
 function saveConfigFile()
   saveOptionFile()
-  shell.run("/reactor-turbine-program/program/editOptions.lua")
-  shell.completeProgram("/reactor-turbine-program/program/editOptions.lua")
+  shell.run("/Dank-Extream-Reactor-2-Turbine-Program/program/editOptions.lua")
+  shell.completeProgram("/Dank-Extream-Reactor-2-Turbine-Program/program/editOptions.lua")
 end
 
 --Go back to the program -- deprecated
@@ -36,19 +36,19 @@ function exit()
   mon.clear()
   continue = false
   if program == "turbine" then
-    shell.run("/reactor-turbine-program/program/turbineControl.lua")
+    shell.run("/Dank-Extream-Reactor-2-Turbine-Program/program/turbineControl.lua")
   elseif program == "reactor" then
-    shell.run("/reactor-turbine-program/program/reactorControl.lua")
+    shell.run("/Dank-Extream-Reactor-2-Turbine-Program/program/reactorControl.lua")
   end
-  shell.completeProgram("/reactor-turbine-program/program/editOptions.lua")
+  shell.completeProgram("/Dank-Extream-Reactor-2-Turbine-Program/program/editOptions.lua")
 end
 
 --Go back to the main menu
 function displayMenu()
   loadOptionFile()
   mon.clear()
-  shell.run("/reactor-turbine-program/start/menu.lua")
-  shell.completeProgram("/reactor-turbine-program/program/editOptions.lua")
+  shell.run("/Dank-Extream-Reactor-2-Turbine-Program/start/menu.lua")
+  shell.completeProgram("/Dank-Extream-Reactor-2-Turbine-Program/program/editOptions.lua")
 end
 
 --Creates all buttons

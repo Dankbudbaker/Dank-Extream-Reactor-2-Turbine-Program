@@ -3,7 +3,7 @@
 -- Hauptmenue --
 
 --Loads the Touchpoint API (by Lyqyd)
-shell.run("cp /reactor-turbine-program/config/touchpoint.lua /touchpoint")
+shell.run("cp /Dank-Extream-Reactor-2-Turbine-Program/config/touchpoint.lua /touchpoint")
 os.loadAPI("touchpoint")
 shell.run("rm touchpoint")
 
@@ -94,7 +94,7 @@ function _G.exit()
   end
   term.clear()
   term.setCursorPos(1,1)
-  shell.completeProgram("/reactor-turbine-program/start/menu.lua")
+  shell.completeProgram("/Dank-Extream-Reactor-2-Turbine-Program/start/menu.lua")
 end
 
 function _G.switchProgram(currBut)
@@ -140,13 +140,13 @@ end
 
 function _G.startTC()
   if program == "turbine" then
-    shell.run("/reactor-turbine-program/program/turbineControl.lua")
+    shell.run("/Dank-Extream-Reactor-2-Turbine-Program/program/turbineControl.lua")
   elseif program == "reactor" then
-    shell.run("/reactor-turbine-program/program/reactorControl.lua")
+    shell.run("/Dank-Extream-Reactor-2-Turbine-Program/program/reactorControl.lua")
   end
 end
 function displayOptions()
-  shell.run("/reactor-turbine-program/program/editOptions.lua")
+  shell.run("/Dank-Extream-Reactor-2-Turbine-Program/program/editOptions.lua")
 end
 function reboot()
   restart()

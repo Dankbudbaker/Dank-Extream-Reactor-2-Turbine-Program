@@ -39,14 +39,14 @@ else
 end
 
 --Url for file downloads
-local relUrl = "https://raw.githubusercontent.com/IllgiLP/Reactor-and-Turbine-control-program/"..branch.."/turbineControl_v2/src/"
+local relUrl = https://raw.githubusercontent.com/Dankbudbaker/Dank-Extream-Reactor-2-Turbine-Program/"..branch.."/dankturbinecontrol_1/src/"
 
 
 --===== Functions =====
 
 --Writes the files to the computer
 function writeFile(url,path)
-  local file = fs.open("/reactor-turbine-program/"..path,"w")
+  local file = fs.open("/Dank-Extream-Reactor-2-Turbine-Program/"..path,"w")
   file.write(url)
   file.close()
 end
@@ -123,7 +123,7 @@ if not update then
     local input = read()
     if input == "y" then
       local file = fs.open("startup","w")
-      file.writeLine("shell.run(\"/reactor-turbine-program/start/start.lua\")")
+      file.writeLine("shell.run(\"/Dank-Extream-Reactor-2-Turbine-Program/start/start.lua\")")
       file.close()
       print()
       print("Startup installed.")
@@ -146,8 +146,8 @@ term.setCursorPos(1,1)
 
 print("Checking and deleting existing files...")
 --Removes old files
-if fs.exists("/reactor-turbine-program/program/") then
-  shell.run("rm /reactor-turbine-program/")
+if fs.exists("/Dank-Extream-Reactor-2-Turbine-Program/program/") then
+  shell.run("rm /Dank-Extream-Reactor-2-Turbine-Program/")
 end
 
 --Download all program parts
@@ -189,7 +189,7 @@ term.setCursorPos(1,1)
 if fs.exists("startup") then
   shell.run("rm startup")
   local file = fs.open("startup","w")
-  file.writeLine("shell.run(\"/reactor-turbine-program/start/start.lua\")")
+  file.writeLine("shell.run(\"/Dank-Extream-Reactor-2-Turbine-Program/start/start.lua\")")
   file.close()
 end
 
@@ -220,4 +220,4 @@ if not update then
   end
 end
 
-shell.completeProgram("/reactor-turbine-program/install/installer.lua")
+shell.completeProgram("/Dank-Extream-Reactor-2-Turbine-Program/install/installer.lua")

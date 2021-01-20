@@ -3,12 +3,12 @@
 -- Turbine control --
 
 --Loads the touchpoint API
-shell.run("cp /reactor-turbine-program/config/touchpoint.lua /touchpoint")
+shell.run("cp /Dank-Extream-Reactor-2-Turbine-Program/config/touchpoint.lua /touchpoint")
 os.loadAPI("touchpoint")
 shell.run("rm touchpoint")
 
 --Loads the input API
-shell.run("cp /reactor-turbine-program/config/input.lua /input")
+shell.run("cp /Dank-Extream-Reactor-2-Turbine-Program/config/input.lua /input")
 os.loadAPI("input")
 shell.run("rm input")
 
@@ -643,7 +643,7 @@ end
 --Runs another program
 function run(program)
     shell.run(program)
-    shell.completeProgram("/reactor-turbine-program/program/turbineControl.lua")
+    shell.completeProgram("/Dank-Extream-Reactor-2-Turbine-Program/program/turbineControl.lua")
     error("terminated.")
 end
 
@@ -689,10 +689,10 @@ function createAllButtons()
 
     --Other buttons
     if lang == "de" then
-        page:add("Hauptmenue", function() run("/reactor-turbine-program/start/menu.lua") end, 2, 23, 17, 23)
+        page:add("Hauptmenue", function() run("/Dank-Extream-Reactor-2-Turbine-Program/start/menu.lua") end, 2, 23, 17, 23)
         --In Englisch
     elseif lang == "en" then
-        page:add("Main Menu", function() run("/reactor-turbine-program/start/menu.lua") end, 2, 23, 17, 23)
+        page:add("Main Menu", function() run("/Dank-Extream-Reactor-2-Turbine-Program/start/menu.lua") end, 2, 23, 17, 23)
     end
     page:draw()
 end

@@ -11,7 +11,7 @@ local selectInstaller = ""
 local installLang = ""
 local branch = ""
 local relUrl = ""
-local relPath = "/reactor-turbine-program/"
+local relPath = "/Dank-Extream-Reactor-2-Turbine-Program/"
 
 
 --Select the installer language
@@ -51,11 +51,11 @@ function selectBranch()
 	local input = read()
 	if input == "1" then
 		branch = "master"
-		relUrl = "https://raw.githubusercontent.com/IllgiLP/Reactor-and-Turbine-control-program/"..branch.."/turbineControl_v2/src/"
+		relUrl = "https://raw.githubusercontent.com/Dankbudbaker/Dank-Extream-Reactor-2-Turbine-Program/"..branch.."/dankturbinecontrol_1/src/"
 		releaseVersion()
 	elseif input == "2" then
 		branch = "beta"
-		relUrl = "https://raw.githubusercontent.com/IllgiLP/Reactor-and-Turbine-control-program/"..branch.."/turbineControl_v2/src/"
+		relUrl = "https://raw.githubusercontent.com/Dankbudbaker/Dank-Extream-Reactor-2-Turbine-Program/"..branch.."/dankturbinecontrol_1/src/"
 		betaVersion()
 	else
 		if installLang == "de" then print("Ungueltige Eingabe!")
@@ -78,7 +78,7 @@ end
 
 --Writes the files to the computer
 function writeFile(url,path)
-	local file = fs.open("/reactor-turbine-program/"..path,"w")
+	local file = fs.open("/Dank-Extream-Reactor-2-Turbine-Program/"..path,"w")
 	file.write(url)
 	file.close()
 end
@@ -122,7 +122,7 @@ function getFiles()
 	--Startup
 	print("Startup file...")
 	local file = fs.open("startup","w")
-  	file.writeLine("shell.run(\"/reactor-turbine-program/start/start.lua\")")
+  	file.writeLine("shell.run(\"/Dank-Extream-Reactor-2-Turbine-Program/start/start.lua\")")
 	file.close()
 end
 
@@ -140,7 +140,7 @@ function releaseVersion()
 	elseif installLang == "en" then
 		writeFile(getURL("install/installerEn.lua"),"install/installer.lua")
 	end
-	shell.run("/reactor-turbine-program/install/installer.lua")
+	shell.run("/Dank-Extream-Reactor-2-Turbine-Program/install/installer.lua")
 end
 
 function betaVersion()
