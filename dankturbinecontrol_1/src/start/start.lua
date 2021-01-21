@@ -274,7 +274,7 @@ function _G.initPeripherals()
 			_G.touchpointLocation = peripheralList[i]
 			--Capacitorbank / Energycell / Energy Core
 		else
-			local tmp = peripheral.wrap(peripheralList[i])
+			local tmp = peripheral.find(peripheralList[i])
 			local stat,err = pcall(function() tmp.getEnergy() end)
 			if stat then
 				_G.v = tmp
