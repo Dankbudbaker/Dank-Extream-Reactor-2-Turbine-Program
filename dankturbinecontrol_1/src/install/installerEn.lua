@@ -72,7 +72,7 @@ if not update then
   term.clear()
   term.setCursorPos(1,1)
   print("Dank Extream Reactor 2 Turbine Program By Dankbudbaker")
-  print("Version 1.6")
+  print("Version 1.5")
   print()
   print("About this program:")
   print("The program controls one BigReactors reactor.")

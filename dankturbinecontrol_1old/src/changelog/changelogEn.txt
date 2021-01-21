@@ -1,7 +1,0 @@
-****************************************************************
---   Dank Extream Reactor 2 Turbine Program by Dankbudbaker--
--- Complete Changelog --
--- Current Version: 2.6 --
-****************************************************************
-Verion 1.0 (beta)
-- First Release (Beta)
