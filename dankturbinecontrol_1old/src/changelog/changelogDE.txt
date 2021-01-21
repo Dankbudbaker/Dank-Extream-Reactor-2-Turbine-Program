@@ -1,0 +1,8 @@
+****************************************************************
+-- Reaktor- und Turbinenprogramm von Thor_s_Crafter --
+-- Komplettes Changelog -- 
+-- Aktuelle Version: 2.6 --
+****************************************************************
+****************************************************************
+Verion 1.0 (beta)
+- First Release (Beta-Stadium)

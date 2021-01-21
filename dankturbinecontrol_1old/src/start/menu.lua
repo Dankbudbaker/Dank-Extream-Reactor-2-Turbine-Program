@@ -74,7 +74,7 @@ function _G.createButtons()
     end
   end
 
-  --Aktiv, wenn mainMenu an ist
+  --Aktiv, wenn mainMenuan ist
   if mainMenu then
     page:rename("menuOn",startOn,true)
     page:toggleButton("menuOn")
@@ -159,7 +159,7 @@ local function getClick(funct)
     if but == "menuOn" then
       print("menuOn")
       if not mainMenu then
-        mainMenu = true
+        mainMenu= true
         saveOptionFile()
         page:rename("menuOn",startOn,true)
       elseif mainMenu then
