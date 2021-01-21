@@ -170,8 +170,8 @@ function backToMainMenu()
   currPage=touch1
   currPage:draw()
   mon.setCursorPos(2,2)
-  mon.setTextColor(tonumber(optionList [textColor]))
-  mon.setBackgroundColor(tonumber(optionList[backgroundColor]))
+  mon.setTextColor("textColor")
+  mon.setBackgroundColor("backgroundColor")
   mon.setCursorPos(4,2)
 
   if lang == "de" then
