@@ -75,10 +75,10 @@ if not update then
   print("Version 1.7")
   print()
   print("About this program:")
-  print("The program controls one BigReactors reactor.")
+  print("The program controls one Reactor From Extream Reactor.")
   print("You can also attach up to 32 turbines.")
-  print("You must connect the computer with Wired Modems to the reactor (and the turbines).")
-  print("Additionally some kind of Energy Storage and a monitor is required.")
+  print("You must connect the computer, Turbines, reactor & one Forge Energy Cell or Cluster.")
+  print("Additionally a monitor is required.")
   print("The size of the monitor has to be at least 7 wide and 4 high.")
   print("If set up with turbines, the reactor must be able to produce at least 2000mb/t of steam per turbine.")
   print()
@@ -96,9 +96,9 @@ if not update then
     local input = read()
     if input == "y" then
       print()
-      shell.run("label set \"TurbineComputer\"")
+      shell.run("label set \"Reactor Main Frame\"")
       print()
-      print("ComputerLabel set to \"TurbineComputer\".")
+      print("ComputerLabel set to \"Reactor Main Frame\".")
       print()
       sleep(2)
       out = false
@@ -151,8 +151,8 @@ if fs.exists("/dankturbinecontrol_1/program/") then
 end
 
 --Download all program parts
-print("Lade neue Programmteile...")
-print("Getting new files...")
+print("running new program command...")
+print("Getting dank files...")
 --Changelog
 term.write("Downloading Changelog files...")
 writeFile(getURL("changelog/changelogDE.txt"),"changelog/changelogDE.txt")
@@ -180,7 +180,7 @@ writeFile(getURL("start/menu.lua"),"start/menu.lua")
 writeFile(getURL("start/start.lua"),"start/start.lua")
 print("     Done.")
 print()
-print("Fertig!")
+print("Finished!")
 
 term.clear()
 term.setCursorPos(1,1)
@@ -203,8 +203,10 @@ if not update then
   print()
   term.setTextColor(colors.green)
   print()
-  print("Thanks for using my program! ;)")
-  print("I hope you like it.")
+  print("Will be updated Periodically")
+  print("I hope you like it. I Took Some Time Writing")
+  print()
+  print()
   print()
   print("Dankbudbaker")
   print("(c) 2020")
