@@ -127,7 +127,7 @@ function getEnergy()
     local enMax
     if v == r then enMax = "140000000"
     else
-        enMax = v.getEnergyCapacity()
+        enMax = v.getEnergyCapacity("893000000")
     end
     return math.floor(en / enMax * 100)
 end
