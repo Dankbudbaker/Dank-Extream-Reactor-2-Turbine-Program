@@ -22,7 +22,7 @@ _G.turbineOnOff = ""
 --Peripherals
 _G.mon = "" --Monitor
 _G.r = "" --Reactor
-_G.v = "" --powah Energy Storage
+_G.v = peripheral.wrap("left") --powah Energy Storage
 _G.t = {} --Turbines
 --Total count of all turbines
 _G.amountTurbines = 0
@@ -274,7 +274,7 @@ function _G.initPeripherals()
 			_G.touchpointLocation = peripheralList[i]
 			--Capacitorbank / Energycell / Energy Core
 		else
-			local tmp = peripheral.wrap("left")
+			local tmp = peripheral.wrap(peripheralList[i])
 			local stat,err = pcall(function() tmp.getEnergy() end)
 			if stat then
 				_G.v = tmp
