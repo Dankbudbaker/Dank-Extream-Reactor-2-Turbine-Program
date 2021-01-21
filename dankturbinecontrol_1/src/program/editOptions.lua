@@ -439,10 +439,10 @@ end
 function setColor(id)
   if mode == "background" then
     backgroundColor = id
-    setBackground()
+    setBackgroundColor()
   elseif mode == "text" then
     textColor = id
-    setText()
+    setTextColor()
   end
 end
 
