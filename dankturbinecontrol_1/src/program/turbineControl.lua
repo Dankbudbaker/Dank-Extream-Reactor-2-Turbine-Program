@@ -207,11 +207,11 @@ function checkPeripherals()
 end
 
 function getEnergy()
-    return v.getEnergy()
+    return v.getEnergy("unknown")
 end
 
 function getEnergyMax()
-    return v.getEnergyCapacity()
+    return v.getEnergyCapacity("140000000")
 end
 
 function getEnergyPer()
