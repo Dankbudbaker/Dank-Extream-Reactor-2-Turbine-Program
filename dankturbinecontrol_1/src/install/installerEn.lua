@@ -96,9 +96,9 @@ if not update then
     local input = read()
     if input == "y" then
       print()
-      shell.run("label set \"Reactor Main Frame\"")
+      shell.run("label set \"Reactor MainFrame\"")
       print()
-      print("ComputerLabel set to \"Reactor Main Frame\".")
+      print("ComputerLabel set to \"Reactor MainFrame\".")
       print()
       sleep(2)
       out = false
