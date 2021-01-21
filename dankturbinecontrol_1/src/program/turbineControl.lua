@@ -211,7 +211,7 @@ function getEnergy()
 end
 
 function getEnergyMax()
-    return v.getEnergyCapacity("140000000")
+    return v.getEnergyCapacity("unknown")
 end
 
 function getEnergyPer()
