@@ -16,13 +16,13 @@ menuOn = true
 --Some variables
 local mode
 local mode2
-local continue = true
+continue = true
 local touch1 = touchpoint.new(touchpointLocation)
 local touch2 = touchpoint.new(touchpointLocation)
 local touch3 = touchpoint.new(touchpointLocation)
 local touch4 = touchpoint.new(touchpointLocation)
 local currPage =  touchpoint.new(touchpointLocation)
-local currFunct = backToMainMenu
+currFunction = backToMainMenu
 
 --Save the changes and reopen the options menu
 function saveConfigFile()
