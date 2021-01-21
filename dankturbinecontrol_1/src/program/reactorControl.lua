@@ -123,11 +123,11 @@ end
 
 --Returns the current energy level (energy storage)
 function getEnergy()
-    local en = v.getEnergy()
+    local en = v.getEnergy("unknown")
     local enMax
-    if v == r then enMax = 140000000
+    if v == r then enMax = "140000000"
     else
-        enMax = v.getEnergyCapacity()
+        enMax = v.getEnergyCapacity("unknown")
     end
     return math.floor(en / enMax * 100)
 end
