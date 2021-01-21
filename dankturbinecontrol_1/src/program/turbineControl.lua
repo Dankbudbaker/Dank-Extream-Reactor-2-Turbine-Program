@@ -211,9 +211,9 @@ function getEnergy()
 end
 
 function getEnergyMax()
-    return v.getEnergyCapacity("unknown")
+    return v.getEnergyCapacity("3600000000")
 end
-
+ 
 function getEnergyPer()
     local en = getEnergy()
     local enMax = getEnergyMax()
