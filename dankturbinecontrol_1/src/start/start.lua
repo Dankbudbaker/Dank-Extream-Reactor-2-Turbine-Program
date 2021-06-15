@@ -262,11 +262,11 @@ function _G.initPeripherals()
 	local peripheralList = peripheral.getNames()
 	for i = 1, #peripheralList do
 		--Turbines
-		if peripheral.getType(peripheralList[i]) == "BigReactors-Turbine" then
+		if peripheral.getType(peripheralList[i]) == "BiggerReactors_Turbine" then
 			t[amountTurbines] = peripheral.wrap(peripheralList[i])
 			_G.amountTurbines = amountTurbines + 1
 			--Reactor
-		elseif peripheral.getType(peripheralList[i]) == "BigReactors-Reactor" then
+		elseif peripheral.getType(peripheralList[i]) == "BiggerReactors_Reactor" then
 			_G.r = peripheral.wrap(peripheralList[i])
 			--Monitor & Touchpoint
 		elseif peripheral.getType(peripheralList[i]) == "monitor" then
